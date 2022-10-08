@@ -1,0 +1,128 @@
+/* Global */
+
+:root {
+    background-color: black;
+    font-size: 16pt;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Navbar code */
+
+.nav-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.nav-div button {
+    border: solid 2% rgb(0, 120, 0);
+    border-radius: 15%;
+    background-color: rgb(0, 230, 100);
+    height: 2rem;
+    width: 4rem;
+    margin-right: 0.3rem;
+    margin-top: 0.2rem;
+    cursor: pointer;
+}
+
+.nav-div button:hover {
+    background-color: rgb(0, 200, 100);
+    transition: 0.3s;
+}
+
+.nav-div button:active {
+    background-color: rgb(0, 180, 80);
+}
+
+.nav-div .home {
+    margin-right: auto;
+}
+
+.nav-div a {
+    color: white;
+    align-self: center;
+    margin-right: 2rem;
+    margin-left: 1.25rem
+}
+
+.nav-div a:visited {
+    color: white;
+
+}
+
+
+/* Task Display Code */
+
+.display {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    min-height: 80vh;
+    background-color: whitesmoke;
+    margin: 0%;
+    align-items: stretch;
+    overflow: hidden;
+    font-size: 0.6rem;
+
+}
+
+.today,
+.urgent,
+.this-week,
+.planned {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.task-label{
+    text-align: center;
+}
+
+
+.task {
+    background-color: rgb(240,240,240);
+    border: 0.1rem solid black;
+    border-radius: 0.7rem;
+}
+
+.task .head{
+    display: flex;
+    align-items: center;
+}
+
+.task .head h2{
+    flex-grow: 2;
+}
+
+.task .head button{
+    flex-grow: 0.5;
+    height: max-content;
+    margin-right: 0.3rem;
+    border: 0;
+    background-color: rgb(240,240,240);
+    cursor: pointer;
+}
+
+.create-new{
+    float: right;
+    background-color: whitesmoke;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-right: 0.3rem;
+}
+
+.create-new:hover{
+    background-color: rgb(240,240,240);
+    transition: 0.3s;
+}
+
+.create-new:active{
+    background-color: rgb(230,230,230);
+}
