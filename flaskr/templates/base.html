@@ -10,10 +10,44 @@
     <title> {% block title %}  {% endblock %}</title>
 </head>
 <body>
+    <div class="side-nav">
+        
+        <a href="#" class="item">
+            <img src="{{url_for('static', filename='images/home.svg')}}" alt="">
+            <span class="link-text">Home</span>
+        </a>
+
+
+        <a href="#" class="item">
+            <img src="{{url_for('static', filename='images/task.svg')}}" alt="">
+            <span class="link-text">View Tasks</span>
+        </a>
+
+
+        <a href="#" class="item">
+            <img src="{{url_for('static', filename='images/calender.svg')}}" alt="">
+            <span class="link-text">Calender</span>
+        </a>
+
+
+        <a href="#" class="item">
+            <img src="{{url_for('static', filename='images/menu.ico')}}" alt="">
+            <span class="link-text">Schedule</span>
+        </a>
+
+
+        <a href="#" class="item">
+            <img src="{{url_for('static', filename='images/menu.ico')}}" alt="">
+            <span class="link-text">Create Task</span>
+        </a>
+
+
+    </div>
+
+    <article>
     <nav>
         <div class="nav-div">
-            <a href="/"> ToDo List </a>
-            <button type="button" href="/" class="home">Home</button>
+            <a href="/" style="margin-right: auto; text-align: center;"> ToDo List </a>
             <button type="button">Login</button>
             <button type="button">Signup</button>
         </div>
@@ -24,6 +58,7 @@
     {% block body %}
     
     {% endblock %}
+    </article>
 </body>
 <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </html>
